@@ -22,4 +22,6 @@ const promise2 = new Promise((resolve, reject) => {
   }, 3000);
 });
 
+promise2.then((messageEl) => document.body.append(messageEl));
+
 promise2.catch((errorEl) => document.body.append(errorEl));
